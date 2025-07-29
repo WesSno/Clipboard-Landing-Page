@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /******************* PRIMARY ********************/
+  --green-500: hsl(171, 66%, 44%);
+  --blue-100: hsl(233, 100%, 69%);
+  /********************* NEUTRAL *********************/
+  --gray-700: hsl(210, 10%, 33%);
+  --gray-500: hsl(201, 11%, 66%);
+}
+
+body {
+  display: grid;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  width: 100%;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+.desktop-grid {
+  display: grid;
+  place-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+picture {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 100%;
+}
+
+.one {
+  width: 120px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  justify-content: center;
+  align-self: center;
+}
+
+.intro-text {
+  display: grid;
+  gap: 1em;
+  text-align: center;
+  padding: 0 1.5em 0 1.5em;
+}
+
+.intro-text h1 {
+  font-size: 2.1em;
+}
+
+.intro-text h1,
+.track-snippets h2,
+.search h3,
+.sync h3,
+.history h3,
+.clipboard h2,
+.supercharge h2,
+.blacklists h3,
+.snippets h3,
+.preview h3,
+footer a {
+  color: var(--gray-700);
+  font-weight: 600;
+}
+
+.track-snippets h2,
+.supercharge h2,
+.clipboard h2 {
+  font-size: 1.9em;
+}
+
+.search h3,
+.sync h3,
+.history h3,
+.blacklists h3,
+.snippets h3,
+.preview h3 {
+  font-size: 1.5em;
+}
+
+.intro-text p,
+.track-snippets p,
+.search p,
+.sync p,
+.history p,
+.clipboard p,
+.supercharge p,
+.blacklists p,
+.snippets p,
+.preview p {
+  line-height: 1.5em;
+  color: var(--gray-500);
+}
+
+.download-options,
+.track-snippets,
+.clipboard,
+.supercharge,
+.blacklists,
+.snippets,
+.preview {
+  display: grid;
+  gap: 1em;
+}
+
+.search,
+.sync,
+.history,
+.clipboard,
+.supercharge,
+.blacklists,
+.snippets,
+.preview {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 1em 0 1em;
+}
+
+.blacklists img,
+.snippets img,
+.preview img {
+  margin: 0 auto;
+  width: 20%;
+}
+
+.preview {
+  margin-bottom: 9em;
+}
+
+.intro-text p {
+  margin-bottom: 1em;
+}
+
+.download-options {
+  margin-bottom: 150px;
+}
+
+button {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 50px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.ios {
+  background-color: var(--green-500);
+  box-shadow: 0px 5px 0px 0px hsla(171, 66%, 32%, 1);
+}
+
+.mac {
+  background-color: var(--blue-100);
+  box-shadow: 0px 5px 0px 0px hsla(233, 50%, 53%, 1);
+}
+
+.ios:hover {
+  background-color: hsl(169, 54%, 67%);
+}
+
+.mac:hover {
+  background-color: hsl(233, 96%, 79%);
+}
+
+.track-snippets {
+  text-align: center;
+  padding: 0 1.5em 0 1.5em;
+}
+
+.track-snippets p {
+  margin-bottom: 70px;
+}
+
+.computer-image,
+.mobile-device {
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+.clipboard {
+  margin-top: 70px;
+}
+
+.supercharge {
+  margin-bottom: 80px;
+}
+
+.google-logo,
+.ibm-logo,
+.microsoft-logo,
+.hp-logo,
+.logo-vector-graphics {
+  width: 30%;
+  margin-bottom: 5em;
+}
+
+footer {
+  display: grid;
+  row-gap: 2em;
+  place-items: center;
+  background-color: rgb(247, 248, 249);
+  padding: 3em 0;
+}
+
+footer .logo {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.faqs,
+.contact,
+.privacy,
+.install,
+.press {
+  color: var(--gray-500);
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 2em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--green-500);
+}
+
+.social-media-icons a {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5em;
+  }
+
+  .intro-text {
+    grid-column: 2 / -2;
+    row-gap: 1em;
+    column-gap: 0;
+    padding: 0;
+  }
+
+  .track-snippets {
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
+  }
+
+  .computer-image {
+    width: 110%;
+    grid-row: 3 / 6;
+    grid-column: 1 / 4;
+  }
+
+  .search,
+  .sync,
+  .history {
+    text-align: left;
+    grid-column: 4 / 6;
+  }
+
+  .search {
+    align-self: start;
+    grid-row: 3 / 4;
+  }
+
+  .sync {
+    align-self: start;
+    grid-row: 4 / 5;
+  }
+
+  .history {
+    grid-row: 5 / 6;
+    align-self: start;
+  }
+
+  .clipboard {
+    grid-row: 6 / 7;
+    grid-column: 2 / 5;
+    align-self: start;
+  }
+  .mobile-device {
+    grid-row: 7 / 8;
+    grid-column: 2 / 5;
+  }
+
+  .supercharge {
+    grid-row: 8 / 9;
+    grid-column: 2 / 5;
+  }
+
+  .blacklists,
+  .snippets,
+  .preview {
+    align-self: start;
+    padding: 0;
+    grid-column: 9 / 10;
+    margin-bottom: 7em;
+  }
+
+  .blacklists {
+    grid-column: 2 / 3;
+  }
+
+  .snippets {
+    grid-column: 3 / 4;
+  }
+
+  .preview {
+    grid-column: 4 / 5;
+  }
+
+  .google-logo,
+  .ibm-logo,
+  .microsoft-logo,
+  .hp-logo,
+  .logo-vector-graphics {
+    grid-row: 10 / 11;
+    width: 70%;
+    margin-bottom: 4em;
+  }
+
+  .google-logo {
+    grid-column: 1 / 2;
+    justify-self: end;
+  }
+
+  .ibm-logo {
+    grid-column: 2 / 3;
+  }
+
+  .microsoft-logo {
+    grid-column: 3 / 4;
+  }
+
+  .hp-logo {
+    grid-column: 4 / 5;
+  }
+
+  .logo-vector-graphics {
+    grid-column: 5 / 6;
+    justify-self: start;
+  }
+
+  .two {
+    grid-row: 11 / 12;
+  }
+
+  .download-options {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 100px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1em;
+  }
+
+  footer .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  .faqs,
+  .privacy,
+  .install,
+  .social-media-icons {
+    grid-row: 1 / 2;
+    justify-self: start;
+  }
+
+  .contact,
+  .press {
+    justify-self: start;
+    grid: 2 / 3;
+  }
+
+  .faqs {
+    grid-column: 2 / 3;
+  }
+
+  .contact {
+    grid-column: 2 / 3;
+  }
+
+  .privacy {
+    grid-column: 3 / 4;
+  }
+
+  .press {
+    grid-column: 3 / 4;
+  }
+
+  .install {
+    grid-column: 4 / 5;
+  }
+
+  .social-media-icons {
+    grid-column: 6 / 7;
+  }
+
+  .attribution {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    align-self: end;
+  }
+}
