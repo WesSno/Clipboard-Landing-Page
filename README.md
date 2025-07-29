@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [View Solution](https://your-solution-url.com)
-- Live Site URL: [View Live Site](https://your-live-site-url.com)
+- Solution URL: [View Solution](https://github.com/WesSno/Clipboard-Landing-Page)
+- Live Site URL: [View Live Site](https://kwatia-clipboard-landing-page.netlify.app/)
 
 ## My process
 
